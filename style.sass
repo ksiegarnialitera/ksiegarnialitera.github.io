@@ -8,6 +8,10 @@ body
     color: white
 
 nav 
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
     a, i 
         color: #fff
         transition: color .3s 
@@ -19,64 +23,88 @@ nav
         padding: 10px
 
 main 
-    margin-top: 10vh
-
-.firstrow
-    margin-bottom: 1.1vw
+    margin: 5vh 5vw 0 5vw
+    display: grid
+    grid-template-columns: 20% 40% 20% 20%
+    grid-template-rows: 25% 25% 25% 25%
 
 .articles
-    background-color: #ffb302
+    background-color: white
     height: 19vh
-    margin-bottom: 1.1vw
+    grid-row: 1/2
+    grid-column: 1/2
+    margin: 0 1vw 3vw 0
 
 .music-notes
-    background-color: #f80904
+    background-color: white
     height: 19vh
+    grid-row: 2/3
+    grid-column: 1/2
+    margin-right: 1vw
 
 .books
-    background-color: #0054de
-    height: 40.5vh
+    background-color: #de0012
+    height: 61.3vh
+    grid-row: 1/4
+    grid-column: 2/3
 
 .watches
-    background-color: #de0012
+    background-color: white
     height: 19vh
+    grid-row: 1/2
+    grid-column: 3/4
+    margin-left: 1vw
 
 .misc2
     background-color: #ffcc01
     height: 19vh
-    margin-bottom: 1.1vw
+    grid-row: 2/3
+    grid-column: 3/4
+    margin-left: 1vw
 
 .cds
-    background-color: #f80904
+    background-color: white
     height: 19vh
-    margin-bottom: 1.1vw
+    grid-row: 3/4
+    grid-column: 1/2
+    margin-right: 1vw
 
 .postcards
     background-color: #0054de
     height: 19vh
+    grid-row: 4/5
+    grid-column: 1/2
+    margin-right: 1vw
 
 .coins
     background-color: #de0012
     height: 19vh
-    margin-bottom: 1.1vw
-    width: 100%
+    grid-row: 1/2
+    grid-column: 4/5
+    margin-left: 1vw
 
 .misc1
     background-color: #ffcc01
     height: 19vh
+    grid-row: 4/5
+    grid-column: 2/3
 
 .text-box
-    background-color: #0054de
-    height: 40.5vh
-    margin-left: 1.1vw
+    background-color: white
+    height: 40vh
+    grid-row: 3/5
+    grid-column: 3/5
+    margin-left: 1vw
 
 .info
-    background-color: #de0012
-    height: 30vh
-    margin: 2.5vw 1.1vw 0 1.1vw
+    background-color: white
+    height: 19vh
+    grid-row: 2/3
+    grid-column: 4/5
+    margin-left: 1vw
 
 .angle
     text-align: center
-    margin-top: 2vh
+    margin-top: 1vh
     font-size: 1.7rem
     
