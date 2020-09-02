@@ -1,3 +1,7 @@
+/* Variables */
+$height-small-box: 19vh
+
+/* Global set-up */
 * 
     box-sizing: border-box
     margin: 0
@@ -6,11 +10,15 @@
 body 
     background-color: #1c1b1b
     color: white
+    font-family: 'Ubuntu', sans-serif
 
-nav 
+/* Header */    
+
+header 
     display: flex
     flex-direction: row
     justify-content: space-between
+    margin: 0 5vw
 
     a, i 
         color: #fff
@@ -18,26 +26,68 @@ nav
 
     a:hover 
         color: #039dff
+        cursor: pointer
 
     i 
         padding: 10px
+        background-color: #1c1b1b
+
+    p 
+        font-size: 1.3rem
+        margin-top: 2vh
+
+.bars
+    display: none
+
+.magnifier
+    font-size: 1.5rem
+    padding-top: 2vh
+    padding-bottom: 0
+
+.menu
+    font-size: 1.3rem
+    margin-top: 2vh
+
+    a 
+        padding: 0 2vw
+
+.red-letter
+    color: #de0012
+
+.blue-letter
+    color: #0054de
+
+.yellow-letter
+    color: #ffcc01
+
+/* Main site */ 
 
 main 
-    margin: 5vh 5vw 0 5vw
+    margin: 2vh 5vw 0 5vw
     display: grid
     grid-template-columns: 20% 40% 20% 20%
     grid-template-rows: 25% 25% 25% 25%
 
-.articles
+.small-box
+    height: $height-small-box
+    position: relative
+
+.white-box
     background-color: white
-    height: 19vh
+    color: black
+
+.text-position
+    position: absolute
+    bottom: 0.5vw
+    right: 0.5vw
+    font-size: 1.5rem
+
+.articles
     grid-row: 1/2
     grid-column: 1/2
     margin: 0 1vw 3vw 0
-
+        
 .music-notes
-    background-color: white
-    height: 19vh
     grid-row: 2/3
     grid-column: 1/2
     margin-right: 1vw
@@ -47,64 +97,111 @@ main
     height: 61.3vh
     grid-row: 1/4
     grid-column: 2/3
+    position: relative
 
 .watches
-    background-color: white
-    height: 19vh
     grid-row: 1/2
     grid-column: 3/4
     margin-left: 1vw
 
 .misc2
     background-color: #ffcc01
-    height: 19vh
     grid-row: 2/3
     grid-column: 3/4
     margin-left: 1vw
 
 .cds
-    background-color: white
-    height: 19vh
     grid-row: 3/4
     grid-column: 1/2
     margin-right: 1vw
 
 .postcards
     background-color: #0054de
-    height: 19vh
     grid-row: 4/5
     grid-column: 1/2
     margin-right: 1vw
 
 .coins
     background-color: #de0012
-    height: 19vh
     grid-row: 1/2
     grid-column: 4/5
     margin-left: 1vw
 
 .misc1
     background-color: #ffcc01
-    height: 19vh
     grid-row: 4/5
     grid-column: 2/3
 
 .text-box
-    background-color: white
     height: 40vh
     grid-row: 3/5
     grid-column: 3/5
     margin-left: 1vw
+    padding: 1vw
+    padding-top: 5vh
+
+    h2 
+        padding-bottom: 1vw
+
+    p 
+        letter-spacing: 0.15vw
+        text-align: justify
 
 .info
-    background-color: white
-    height: 19vh
     grid-row: 2/3
     grid-column: 4/5
     margin-left: 1vw
+    font-size: 1.2rem
+    padding: 0.5vw
+    letter-spacing: 0.25vw
+    line-height: 4.25vh
+
+    span 
+        font-weight: bold
+
+.box-hover
+    transition: transform 0.3s
+
+.box-hover:hover
+    transform: scale(1.05)
+    z-index: 1
 
 .angle
     text-align: center
-    margin-top: 1vh
     font-size: 1.7rem
-    
+
+/* Feed */     
+
+.feed
+    display: grid
+    grid-template-columns: 20% 20% 20% 20% 20%
+    margin: 0 5vw
+
+.feed-first-column
+    grid-column: 1/2
+
+.feed-second-column
+    grid-column: 2/3
+
+.feed-third-column
+    grid-column: 3/4
+
+.feed-fourth-column
+    grid-column: 4/5
+
+.feed-fifth-column
+    grid-column: 5/6
+
+.feed-box
+    display: grid
+    grid-template-rows: 80% 20%
+
+    img 
+        grid-row: 1/2
+        width: 100%
+
+    div 
+        grid-row: 2/3
+
+
+         

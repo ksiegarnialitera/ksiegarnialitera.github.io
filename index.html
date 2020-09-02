@@ -7,35 +7,87 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!-- icons  -->
     <script src="https://kit.fontawesome.com/16a40b5842.js" crossorigin="anonymous"></script>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- styles -->
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
 </head>
 <body>
-    <nav>
+    <header>
         <button class="bars">
             <i class="fas fa-bars"></i>
         </button>
-        <h2>Księgarnia Litera</h2>
+        <p><span class="red-letter">K</span>sięgarni<span>a</span> <span class="blue-letter">L</span>iter<span>a</span></p>
         <div class="menu">
                 <a>Kontakt</a>
                 <a>Regulamin</a>
                 <a>Koszyk</a>
         </div>
-        <i class="fas fa-search"></i>
-    </nav>
+        <i class="magnifier fas fa-search"></i>
+    </header>
     <main>
-        <div class="articles">ART BRUT</div>
-        <div class="music-notes">nuty</div> 
-        <div class="books">książki</div>
-        <div class="misc2">miscelanea</div>
-        <div class="watches">zegarki</div>
-        <div class="cds">płyty cd i winyle</div>
-        <div class="postcards">pocztówki</div>
-        <div class="coins">monety</div>
-        <div class="misc1">miscelanea</div>
-        <div class="text-box"></div>
-        <div class="info">Kupujemy książki, pocztówki, monety, zegarki i inne tel. 535 657 595</div>
+        <div class="articles small-box white-box box-hover"><p class="text-position">art brut</p></div>
+        <div class="music-notes small-box white-box box-hover"><p class="text-position">nuty</p></div> 
+        <div class="books box-hover"><p class="text-position">książki</p></div>
+        <div class="misc2 small-box box-hover"><p class="text-position">miscelanea</p></div>
+        <div class="watches small-box white-box box-hover"><p class="text-position">zegarki</p></div>
+        <div class="cds small-box white-box box-hover"><p class="text-position">płyty cd i winyle</p></div>
+        <div class="postcards small-box box-hover"><p class="text-position">pocztówki</p></div>
+        <div class="coins small-box box-hover"><p class="text-position">monety</p></div>
+        <div class="misc1 small-box box-hover"><p class="text-position">miscelanea</p></div>
+        <div class="text-box white-box">
+            <h2>Jesienny Kiermasz Książek na Filologii</h2>
+            <p>Jesień idzie, nie ma na to rady...:) <br />
+            Zapraszamy na kiermasz książek ze wszystkich dziedzin wiedzy, literatury, sztuki.
+            Naszykowaliśmy około 15-20 tys. książek, które udostępniać będziemy stopniowo, gdyż
+            pomieszczenia nie są z gumy:) Cena to tylko 5zł za sztukę:) Kiermasz na pewno będzie 
+            otwarty przez miesiąc, ale jest duże prawdopodobieństwo, że zostanie przedłużony.</p>
+        </div>
+        <div class="info small-box white-box">Kupujemy książki, pocztówki, monety, zegarki i inne tel.<br><span>535 657 595</span></div>
     </main>
     <p class="angle"><i class="fas fa-angle-down"></i></p>
+    <div class="feed">
+        <div class="feed-first-column feed-box">
+            <div><img src="zdjecia/zdj1.jpg" alt="Zdjęcie produktu"></div>
+            <div></div>
+        </div>
+        <div class="feed-second-column feed-box">
+            <div><img src="zdjecia/zdj2.jpg" alt="Zdjęcie produktu"></div>
+            <div></div>
+        </div>
+        <div class="feed-third-column feed-box">
+            <div><img src="zdjecia/zdj3.jpg" alt="Zdjęcie produktu"></div>
+            <div></div>
+        </div>
+        <div class="feed-fourth-column feed-box">
+            <div><img src="zdjecia/zdj4.jpg" alt="Zdjęcie produktu"></div>
+            <div></div>
+        </div>
+        <div class="feed-fifth-column feed-box">
+            <div><img src="zdjecia/zdj5.jpg" alt="Zdjęcie produktu"></div>
+            <div></div>
+        </div>
+        <div class="feed-first-column feed-box">
+            <div><img src="zdjecia/zdj4.jpg" alt="Zdjęcie produktu"></div>
+            <div></div>
+        </div>
+        <div class="feed-second-column feed-box">
+            <div><img src="zdjecia/zdj3.jpg" alt="Zdjęcie produktu"></div>
+            <div></div>
+        </div>
+        <div class="feed-third-column feed-box">
+            <div><img src="zdjecia/zdj5.jpg" alt="Zdjęcie produktu"></div>
+            <div></div>
+        </div>
+        <div class="feed-fourth-column feed-box">
+            <div><img src="zdjecia/zdj1.jpg" alt="Zdjęcie produktu"></div>
+            <div></div>
+        </div>
+        <div class="feed-fifth-column feed-box">
+            <div><img src="zdjecia/zdj2.jpg" alt="Zdjęcie produktu"></div>
+            <div></div>
+        </div>
+    </div>
+<script src="main.js"></script>
 </body>
 </html>
