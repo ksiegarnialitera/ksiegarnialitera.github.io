@@ -256,9 +256,43 @@ main {
   z-index: 1;
 }
 
+.books:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.misc1:hover {
+  -webkit-transform: scale(1.025);
+          transform: scale(1.025);
+}
+
 .angle {
   text-align: center;
   font-size: 1.7rem;
+}
+
+.move-right {
+  -webkit-transform: translateX(5%);
+          transform: translateX(5%);
+}
+
+.move-left {
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+}
+
+.move-up {
+  -webkit-transform: translateY(5%);
+          transform: translateY(5%);
+}
+
+.move-down {
+  -webkit-transform: translateY(-5%);
+          transform: translateY(-5%);
+}
+
+.shadow {
+  opacity: 0.5;
 }
 
 /* Feed */
