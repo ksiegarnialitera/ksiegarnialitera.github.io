@@ -37,11 +37,13 @@ const pictureThird = document.querySelector('.pic3');
 const carrousel = document.querySelector('.booksTop');
 
 books.addEventListener('mouseover', function() {
-    carrousel.classList.remove('invisibility');
+    carrousel.classList.remove('invisibilityTop');
+    carrousel.classList.add('animation');
 })
 
 books.addEventListener('mouseout', function() {
-    carrousel.classList.add('invisibility');
+    carrousel.classList.add('invisibilityTop');
+    carrousel.classList.remove('animation');
 })
 
 let images =[pictureSecond, pictureThird, pictureFirst];
