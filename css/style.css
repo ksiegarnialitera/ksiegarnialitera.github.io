@@ -162,17 +162,28 @@ main {
 }
 
 .booksImg {
-  width: 80%;
-  height: 100%;
+  width: 30%;
+  max-height: 30vh;
   margin: auto;
-  left: 0;
   top: 0;
-  right: 0;
   bottom: 0;
   -o-object-fit: contain;
      object-fit: contain;
   display: block;
   position: absolute;
+}
+
+.pic1 {
+  left: 5%;
+}
+
+.pic2 {
+  left: 35%;
+  max-height: 35vh;
+}
+
+.pic3 {
+  left: 65%;
 }
 
 .invisibility {
