@@ -106,6 +106,9 @@ main {
   bottom: 0.5vw;
   right: 0.5vw;
   font-size: 1.5rem;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
 }
 
 .articles {
@@ -138,6 +141,56 @@ main {
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 90% 10%;
+      grid-template-rows: 90% 10%;
+}
+
+.booksTop {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.booksImg {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  position: absolute;
+}
+
+.invisibility {
+  display: none;
+}
+
+.carrousel-angle {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+}
+
+.angle-right {
+  right: 3%;
+}
+
+.angle-left {
+  left: 3%;
 }
 
 .watches {

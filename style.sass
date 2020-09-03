@@ -81,6 +81,7 @@ main
     bottom: 0.5vw
     right: 0.5vw
     font-size: 1.5rem
+    grid-row: 2/3
 
 .articles
     grid-row: 1/2
@@ -98,6 +99,40 @@ main
     grid-row: 1/4
     grid-column: 2/3
     position: relative
+    display: grid
+    grid-template-rows: 90% 10%
+
+.booksTop
+    grid-row: 1/2
+    display: flex
+    flex-direction: row
+    position: relative
+
+.booksImg
+    width: 80%
+    height: 100%
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    object-fit: contain;
+    display: block;
+    position: absolute;
+
+.invisibility
+    display: none
+
+.carrousel-angle
+    position: absolute
+    top: 50%
+    font-size: 2rem
+
+.angle-right
+    right: 3%
+
+.angle-left
+    left: 3%   
 
 .watches
     grid-row: 1/2

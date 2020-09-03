@@ -29,6 +29,28 @@ for (let box of boxesMatrixShadow) {
     })
 }
 
+const arrowLeft = document.querySelector('.angle-left');
+const arrowRight = document.querySelector('.angle-right');
+const pictureFirst = document.querySelector('.pic1');
+const pictureSecond = document.querySelector('.pic2');
+const pictureThird = document.querySelector('.pic3');
+const carrousel = document.querySelector('.booksTop');
+
+books.addEventListener('mouseover', function() {
+    carrousel.classList.remove('invisibility');
+})
+
+books.addEventListener('mouseout', function() {
+    carrousel.classList.add('invisibility');
+})
+
+let images =[pictureSecond, pictureThird, pictureFirst];
+
+arrowRight.addEventListener('onClick', function() {
+for (let i=0; i<images.length; i++) {
+    
+}
+})
 // let boxesWithoutArticles = [musicNotes, books, misc2, watches, cds, postcards, coins, misc1, textBox, info];
 
 // articles.addEventListener('mouseover', function() {
