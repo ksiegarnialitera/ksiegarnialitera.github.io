@@ -54,7 +54,7 @@ header p {
 }
 
 .magnifier {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding-top: 2vh;
   padding-bottom: 0;
 }
@@ -214,6 +214,10 @@ main {
   margin-left: 1vw;
   padding: 1vw;
   padding-top: 5vh;
+  -webkit-transition: opacity .8s, -webkit-transform .8s;
+  transition: opacity .8s, -webkit-transform .8s;
+  transition: transform .8s, opacity .8s;
+  transition: transform .8s, opacity .8s, -webkit-transform .8s;
 }
 
 .text-box h2 {
@@ -237,6 +241,10 @@ main {
   padding: 0.5vw;
   letter-spacing: 0.25vw;
   line-height: 4.25vh;
+  -webkit-transition: opacity 0.8s, -webkit-transform .8s;
+  transition: opacity 0.8s, -webkit-transform .8s;
+  transition: transform .8s, opacity 0.8s;
+  transition: transform .8s, opacity 0.8s, -webkit-transform .8s;
 }
 
 .info span {
@@ -244,26 +252,29 @@ main {
 }
 
 .box-hover {
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: opacity 0.8s, -webkit-transform 0.8s;
+  transition: opacity 0.8s, -webkit-transform 0.8s;
+  transition: transform 0.8s, opacity 0.8s;
+  transition: transform 0.8s, opacity 0.8s, -webkit-transform 0.8s;
 }
 
 .box-hover:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   z-index: 1;
+  cursor: pointer;
 }
 
 .books:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+  cursor: pointer;
 }
 
 .misc1:hover {
   -webkit-transform: scale(1.025);
           transform: scale(1.025);
+  cursor: pointer;
 }
 
 .angle {
@@ -272,23 +283,28 @@ main {
 }
 
 .move-right {
-  -webkit-transform: translateX(5%);
-          transform: translateX(5%);
+  -webkit-transform: translateX(1vw);
+          transform: translateX(1vw);
 }
 
 .move-left {
-  -webkit-transform: translateX(-5%);
-          transform: translateX(-5%);
+  -webkit-transform: translateX(-1vw);
+          transform: translateX(-1vw);
 }
 
 .move-up {
-  -webkit-transform: translateY(5%);
-          transform: translateY(5%);
+  -webkit-transform: translateY(-1vw);
+          transform: translateY(-1vw);
 }
 
 .move-down {
-  -webkit-transform: translateY(-5%);
-          transform: translateY(-5%);
+  -webkit-transform: translateY(1vw);
+          transform: translateY(1vw);
+}
+
+.move-down-right {
+  -webkit-transform: translate(1vw, 1vw);
+          transform: translate(1vw, 1vw);
 }
 
 .shadow {
