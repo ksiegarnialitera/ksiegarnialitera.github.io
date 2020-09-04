@@ -118,6 +118,19 @@ main
     display: block
     position: absolute
 
+.default-link
+    position: absolute 
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    z-index: 2
+//   /* this is a fix for IE7-9 */
+//     background-color:#ffffff    
+//     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"  
+//     filter: alpha(opacity=0)  
+//     opacity:0 
+
 .pic1
     left: 5%
 
@@ -280,14 +293,34 @@ main
 
 .feed-box
     display: grid
-    grid-template-rows: 80% 20%
+    grid-template-rows: 90% 10%
+    margin: 1vw 1vw
+    background-color: white
+    position: relative
 
     img 
-        grid-row: 1/2
         width: 100%
 
-    div 
-        grid-row: 2/3
+.boxImage
+    grid-row: 1/2
+    width: 100%
+    max-height: 100%
+    object-fit: contain
+    display: block
 
+.boxPrice
+    grid-row: 2/3
+    color: #1c1b1b
+    font-weight: 500
+    padding: 0.5vw 0 0 0.8vw
 
-         
+/* List */  
+.listMain
+    margin: 1vh 5vw 0 5vw
+    display: grid
+    grid-template-columns: 20% 20% 20% 20% 20%
+
+.listTitle
+    margin: 3vh 0 0 5vw
+    font-size: 1.3rem
+    text-align: center
