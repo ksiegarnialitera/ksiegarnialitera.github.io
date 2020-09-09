@@ -450,47 +450,37 @@ main {
   grid-column: 5/6;
 }
 
-.feed-box {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 90% 10%;
-      grid-template-rows: 90% 10%;
+.list-box {
   margin: 1vw 1vw;
-  background-color: white;
   position: relative;
+  height: 35vh;
+  display: inline-block;
 }
 
-.feed-box img {
-  width: 100%;
-}
-
-.boxImage {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  width: 100%;
+.list-box img {
   max-height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  display: block;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 .boxPrice {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  color: #1c1b1b;
+  background-color: rgba(28, 27, 27, 0.7);
+  color: white;
   font-weight: 500;
-  padding: 0.5vw 0 0 0.8vw;
+  padding: 0.5vw 0 0.5vw 0.8vw;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 /* List */
 .listMain {
   margin: 1vh 5vw 0 5vw;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20% 20% 20% 20% 20%;
-      grid-template-columns: 20% 20% 20% 20% 20%;
+  text-align: justify;
 }
 
 .listTitle {
