@@ -45,7 +45,7 @@ header i {
 }
 
 header p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-top: 2vh;
 }
 
@@ -54,13 +54,13 @@ header p {
 }
 
 .magnifier {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding-top: 2vh;
   padding-bottom: 0;
 }
 
 .menu {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin-top: 2vh;
 }
 
@@ -78,6 +78,10 @@ header p {
 
 .yellow-letter {
   color: #ffcc01;
+}
+
+#titleBooks, #magnifierBooks, #menuBooks {
+  font-size: 1.1rem;
 }
 
 /* Main site */
@@ -121,6 +125,18 @@ main {
   margin: 0 1vw 3vw 0;
 }
 
+@-moz-document url-prefix() {
+  .articles {
+    margin: 0 1vw 1vw 0;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .articles {
+    margin: 0 1vw 1vw 0;
+  }
+}
+
 .music-notes {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
@@ -129,6 +145,18 @@ main {
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   margin-right: 1vw;
+}
+
+@-moz-document url-prefix() {
+  .music-notes {
+    margin-bottom: 1vw;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .music-notes {
+    margin-bottom: 1vw;
+  }
 }
 
 .books {
@@ -271,6 +299,18 @@ main {
   margin-right: 1vw;
 }
 
+@-moz-document url-prefix() {
+  .cds {
+    margin-bottom: 1vw;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .cds {
+    margin-bottom: 1vw;
+  }
+}
+
 .postcards {
   background-color: #0054de;
   -ms-grid-row: 4;
@@ -380,6 +420,12 @@ main {
 .angle {
   text-align: center;
   font-size: 1.7rem;
+}
+
+@-moz-document url-prefix() {
+  .angle {
+    margin-top: 1vw;
+  }
 }
 
 .move-right {
