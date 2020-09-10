@@ -89,6 +89,8 @@ input {
   width: 0;
   background-color: #1c1b1b;
   border: #1c1b1b;
+  -webkit-transition: width .5s;
+  transition: width .5s;
 }
 
 .mag:hover > .inputM {
