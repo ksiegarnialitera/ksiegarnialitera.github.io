@@ -1,12 +1,16 @@
 /* Contact */
+.whiteBox {
+  background-color: white;
+}
+
 .contactMain {
-  margin: 3vh 12vw 0 12vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30% 40% 30%;
       grid-template-columns: 30% 40% 30%;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 3vh 12vw 0 12vw;
   height: 90vh;
   color: black;
 }
@@ -18,9 +22,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
-  background-color: white;
-  margin-bottom: 1vw;
-  margin-right: 0.5vw;
+  margin: 0 0.5vw 1vw 0;
   padding: 1.2vw 0 0 1vw;
   font-size: 2.5rem;
   letter-spacing: 0.35vw;
@@ -34,10 +36,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  background-color: white;
-  margin-top: 0.5vw;
-  margin-bottom: 0.5vw;
-  margin-right: 1vw;
+  margin: 0.5vw 1vw 0.5vw 0;
   padding: 1.5vw 0 0 1vw;
   font-size: 2rem;
   letter-spacing: 0.35vw;
@@ -51,12 +50,9 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  margin: 0.5vw;
+  padding: 0.5vw 0 0 1vw;
   background-color: #de0012;
-  margin-top: 0.5vw;
-  margin-bottom: 0.5vw;
-  margin-left: 0.5vw;
-  margin-right: 0.5vw;
-  padding: 0.5vw 0 0 0.5vw;
   font-size: 1.2rem;
   letter-spacing: 0.25vw;
   line-height: 2vw;
@@ -89,7 +85,6 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
-  background-color: white;
   margin: 1vw 0.5vw 0 0;
   padding: 2vw 2vw 0 2vw;
   font-size: 1.5rem;
@@ -105,18 +100,17 @@
   -ms-grid-row: 1;
   -ms-grid-row-span: 6;
   grid-row: 1/7;
-  margin-left: 1vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-left: 1vw;
 }
 
 .allegroBoxes {
-  background-color: white;
+  padding: 0.5vw 0 0 1vw;
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
-  padding: 0.5vw 0 0 1vw;
 }
 
 .allegroBoxes > a {
@@ -149,8 +143,8 @@
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  background-color: #ffcc01;
   margin: 0.25vw 0 1vw 0;
+  background-color: #ffcc01;
 }
 
 .allegroBox3 {
@@ -178,7 +172,7 @@
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   grid-row: 6/7;
-  background-color: #0054de;
   margin-top: 1.25vw;
+  background-color: #0054de;
 }
 /*# sourceMappingURL=styleContact.css.map */
