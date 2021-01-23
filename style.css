@@ -54,7 +54,7 @@ header i {
 }
 
 header p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 2vh;
 }
 
@@ -63,13 +63,13 @@ header p {
 }
 
 .magnifier {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-top: 2vh;
   padding-bottom: 0;
 }
 
 .menu {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-top: 2vh;
 }
 
@@ -91,7 +91,7 @@ header p {
 }
 
 #titleBooks, #magnifierBooks, #menuBooks {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 #titleBooks > a {
@@ -221,7 +221,6 @@ main {
 }
 
 .boxImg {
-  width: 30%;
   margin: auto;
   top: 0;
   bottom: 0;
@@ -231,8 +230,14 @@ main {
   position: absolute;
 }
 
+.smallBoxImg {
+  max-height: 13vh;
+  width: 27%;
+}
+
 .booksImg {
   max-height: 30vh;
+  width: 30%;
 }
 
 .default-link {
@@ -244,17 +249,30 @@ main {
   z-index: 2;
 }
 
-.pic1 {
+.pic1-books {
   left: 5%;
 }
 
-.pic2 {
-  left: 35%;
-  max-height: 35vh;
+.pic1-small-box {
+  left: 9.5%;
 }
 
-.pic3 {
+.pic2-books {
+  max-height: 35vh;
+  left: 35%;
+}
+
+.pic2-small-box {
+  max-height: 17vh;
+  left: 36.5%;
+}
+
+.pic3-books {
   left: 65%;
+}
+
+.pic3-small-box {
+  left: 63.5%;
 }
 
 .invisibility {
