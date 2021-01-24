@@ -30,16 +30,15 @@ for (let box of boxesMatrixShadow) {
 }
 
 let boxes = document.querySelectorAll('.boxes');
-let boxImages = document.querySelectorAll('.box-images');
 
 for (let box of boxes) {
     box.addEventListener('mouseover', function() {
-        boxImages.classList.remove('invisibilityTop');
-        boxImages.classList.add('animation');
+        box.firstElementChild.classList.remove('invisibilityTop');
+        box.firstElementChild.classList.add('animation');
     })
 
     box.addEventListener('mouseout', function() {
-        boxImages.classList.add('invisibilityTop');
-        boxImages.classList.remove('animation');
+        box.firstElementChild.classList.add('invisibilityTop');
+        box.firstElementChild.classList.remove('animation');
     })
 }

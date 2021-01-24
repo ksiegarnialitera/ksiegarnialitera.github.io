@@ -235,6 +235,11 @@ main {
   width: 27%;
 }
 
+.longBoxImg {
+  max-height: 13vh;
+  width: 16%;
+}
+
 .booksImg {
   max-height: 30vh;
   width: 30%;
@@ -257,6 +262,10 @@ main {
   left: 9.5%;
 }
 
+.pic1-long-box {
+  left: 12.5%;
+}
+
 .pic2-books {
   max-height: 35vh;
   left: 35%;
@@ -267,12 +276,30 @@ main {
   left: 36.5%;
 }
 
+.pic2-long-box {
+  left: 27.5%;
+  max-height: 17vh;
+}
+
 .pic3-books {
   left: 65%;
 }
 
 .pic3-small-box {
   left: 63.5%;
+}
+
+.pic3-long-box {
+  left: 42%;
+}
+
+.pic4-long-box {
+  left: 56.5%;
+  max-height: 17vh;
+}
+
+.pic5-long-box {
+  left: 71%;
 }
 
 .invisibility {
